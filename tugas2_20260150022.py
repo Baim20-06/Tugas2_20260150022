@@ -9,8 +9,8 @@ Bagian 2 : Menghitung total belanja di kasir (dengan diskon & pajak)
 # =========================================================
 print("=== BAGIAN 1: KALKULATOR BMI ===")
 
-nama = input("Nama:  ")
-nim = input("NIM:  ")
+nama = input("Nama: ")
+nim = input("NIM: ")
 berat = float(input("Berat Badan (kg): "))
 tinggi_cm = float(input("Tinggi Badan (cm): "))
 
@@ -32,20 +32,20 @@ print(f"Nilai BMI     : {round(bmi, 2)}")
 # =========================================================
 print("\n=== BAGIAN 2: KASIR ===")
 
-nama_barang1 = input("Nanas ")
-harga_barang1 = float(input(f"20000 {nama_barang1}: "))
+nama_barang1 = input("Masukkan nama barang 1: ")
+harga_barang1 = float(input(f"Masukkan harga {nama_barang1}: "))
 
-nama_barang2 = input("Jeruk ")
-harga_barang2 = float(input(f"15000 {nama_barang2}: "))
+nama_barang2 = input("Masukkan nama barang 2: ")
+harga_barang2 = float(input(f"Masukkan harga {nama_barang2}: "))
 
 # Hitung subtotal
-subtotal = 20000 + 15000
+subtotal = harga_barang1 + harga_barang2
 
 # Hitung diskon 5% dari subtotal
-diskon = 0.05 * 35000
+diskon = 0.05 * subtotal
 
 # Harga setelah diskon
-harga_setelah_diskon = 35000 - diskon
+harga_setelah_diskon = subtotal - diskon
 
 # Hitung pajak 11% dari harga setelah diskon
 pajak = 0.11 * harga_setelah_diskon
